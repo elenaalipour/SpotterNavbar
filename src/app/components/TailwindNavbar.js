@@ -109,7 +109,7 @@ export default function TailwindNavbar() {
                             href={item.href || "#"}
                             className="flex items-center gap-1 cursor-pointer text-white select-none"
                         >
-                            <span className="">{item.label}</span>                            
+                            {item.icon}<span className="">{item.label}</span>                            
                             {item.children && (
                                 <span className="block origin-center transition-transform duration-300 translate-y-px group-hover:rotate-180">
                                     <svg
