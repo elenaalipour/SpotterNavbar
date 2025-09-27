@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Open_Sans  } from 'next/font/google'
 import './globals.css'
+import TailwindNavbar from "@/components/TailwindNavbar";
 const openSans = Open_Sans({
   subsets: ['latin'],
   weight: ['400', '600', '700'], // Regular, SemiBold, Bold
@@ -18,7 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`overflow-hidden ` + openSans.className}>{children}</body>
+      <body className={`overflow-hidden ` + openSans.className}>
+        <TailwindNavbar />
+        {children}</body>
     </html>
   )
 }

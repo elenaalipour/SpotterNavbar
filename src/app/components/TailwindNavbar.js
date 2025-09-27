@@ -11,49 +11,49 @@ export default function TailwindNavbar() {
     };
     const menuItems = [
         { icon: <PiHouse />, label: "Home", href: "/" },
-        { icon: <PiTrendUpFill  />, label: "Lens", href: "#" },
+        { icon: <PiTrendUpFill  />, label: "Lens", href: "/Lens" },
         {
             icon: <PiTruck />,
             label: "TMS",
             children: [
-                { label: "Overview", href: "#" },
-                { label: "Reports", href: "#" },
-                { label: "Settings", href: "#" },
+                { label: "Overview", href: "/TMS" },
+                { label: "Reports", href: "/TMS/Reports" },
+                { label: "Settings", href: "/TMS/Settings" },
             ],
         },
         {
             icon: <PiShield  />,
             label: "Sentinel",
             children: [
-                { label: "Alerts", href: "#" },
-                { label: "Dashboard", href: "#" },
-                { label: "History", href: "#" },
+                { label: "Alerts", href: "/Sentinel" },
+                { label: "Dashboard", href: "/Sentinel/Dashboard" },
+                { label: "History", href: "/Sentinel/History" },
             ],
         },
         {
             icon: <PiGoogleChromeLogo />,
             label: "Extension",
             children: [
-                { label: "Browser Extension", href: "#" },
-                { label: "API Plugin", href: "#" },
+                { label: "Browser Extension", href: "/Extension" },
+                { label: "API Plugin", href: "/Extension/Api" },
             ],
         },
         {
             icon: <PiQrCode  />,
             label: "Spotter App",
             children: [
-                { label: "Web App", href: "#" },
-                { label: "Mobile App", href: "#" },
+                { label: "Web App", href: "/SpotterApp" },
+                { label: "Mobile App", href: "/SpotterApp/Mobile" },
             ],
         },
-        { icon: <PiCalculator />, label: "Loan Calculators", href: "#" },
+        { icon: <PiCalculator />, label: "Loan Calculators", href: "/LoanCalculator" },
         {
             icon: <PiFileTextDuotone  />,
             label: "Insights",
             children: [
-                { label: "Analytics", href: "#" },
-                { label: "Reports", href: "#" },
-                { label: "Trends", href: "#" },
+                { label: "Analytics", href: "/Insights" },
+                { label: "Reports", href: "/Insights/Reports" },
+                { label: "Trends", href: "/Insights/Trends" },
             ],
         },
     ];
